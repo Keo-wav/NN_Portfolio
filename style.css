@@ -45,16 +45,21 @@ body {
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
 }
 
-.logo:hover {
+/* .logo:hover {
     transform: scale(1.1);
-}
+} */
 
 /* .logo span {
     text-shadow: 0 0 25px var(--main-color);
 } */
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
 
 .navbar a {
     font-size: 1.8rem;
@@ -62,7 +67,13 @@ body {
     margin-left: 4rem;
     font-weight: 500;
     border-bottom: 3px solid transparent;
+    display: flex;
+    align-items: center; /* to center icon & text */
     transition: 0.3s ease;
+}
+
+.navbar a i {
+    margin: 3px;
 }
 
 .navbar a:hover,
