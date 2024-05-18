@@ -327,8 +327,13 @@ span {
     content: "";
     position: absolute;
     width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
+    height: 110%;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 255, 238, 0), /* transparent at the top */
+        var(--main-color) 25%, /* main color starts fading in */
+        var(--main-color) 75%, /* main color stays solid */
+        rgba(0, 255, 238, 0)); /* transparent at the bottom */
     left: calc(50% - 1px);
 }
 
@@ -426,7 +431,7 @@ span {
 
 .project-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 250px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -552,6 +557,9 @@ span {
     }
     .home-img img {
         width: 60vw;
+    }
+    .project-box {
+        height: auto;
     }
     .projects h2 {
         margin-bottom: 3rem;
