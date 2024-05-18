@@ -590,11 +590,8 @@ span {
         display: none;
     }
     .home {
-        padding: 0;
-        margin-top: 0;
     }
     .home-content {
-        margin-top: 0;
         padding-left: 53px;
     }
     .home-content h1 {
