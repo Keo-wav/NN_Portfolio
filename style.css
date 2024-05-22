@@ -635,14 +635,20 @@ span {
     color: white;
 }
 
-#name-form {
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
+.contact p {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
-#name-form input {
-    width: 30rem;
+.contact p a {
+    color: inherit;
+    transition: 0.3s ease-in-out;
+}
+
+.contact p a:hover {
+    color: var(--text-color);
 }
 
 .contact form {
@@ -663,13 +669,13 @@ span {
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     background: var(--bg-color);
     border-radius: 1rem;
     border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     resize: none;
 }
 
