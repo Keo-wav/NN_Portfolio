@@ -36,7 +36,7 @@ body {
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: last baseline;
     z-index: 5;
 }
 
@@ -508,12 +508,15 @@ span {
     .projects {
         padding-bottom: 7rem;
     }
+    .contact form {
+        flex-direction: column;
+    }
     .footer {
         padding: 2rem 3%;
     }
 }
 
-@media(max-width:970px) {
+@media(max-width:989px) {
     #menu-icon {
         display: block;
     }
@@ -569,7 +572,7 @@ span {
     }
 }
 
-@media(max-width:740px) {
+/* @media(max-width:740px) {
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding-right: 0;
@@ -577,9 +580,9 @@ span {
         margin-bottom: 4rem;
         text-align: center;
     }
-}
+} */
 
-@media(max-width:500px) {
+/* @media(max-width:500px) {
     #logo-long {
         display: none;
     }
@@ -600,6 +603,78 @@ span {
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
     }
+} */
+
+#contact-container {
+    display: flex;
+
+}
+
+/* #contact-container a i {
+    width: 5rem;
+    height: 5rem;
+}
+
+.contact a {
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
+} */
+
+.contact {
+    background-color: var(--second-bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#name-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+#name-form input {
+    width: 30rem;
+}
+
+.contact form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 1rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
 }
 
 .footer {
