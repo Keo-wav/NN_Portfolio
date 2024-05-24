@@ -452,7 +452,7 @@ span {
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 3rem 3rem;
 }
 
 .project-info h4 {
@@ -467,6 +467,13 @@ span {
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+    padding-bottom: 2rem;
+}
+
+.project-stack {
+    display: flex;
+    gap: 1rem;
+    font-size: 40px;
 }
 
 @media(max-width:1285px) {
