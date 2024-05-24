@@ -640,11 +640,17 @@ span {
 
 /* CONTACT SECTION V2 */
 
+.contact p {
+    margin-top: 10rem;
+    color: var(--main-color);
+    font-size: 15px;
+    text-align: center;
+}
+
 #contact-box-container {
     display: flex;
     justify-content: center;
     height: 200px;
-    margin-top: 10rem;
     align-items: center;
     gap: 3rem;
 }
@@ -654,19 +660,46 @@ span {
     border: none;
     background: linear-gradient(to bottom, 
                                 rgba(255, 255, 255, 0) 0%,  /* Transparent at the top */
-                                rgba(255, 255, 255, 1) 50%, /* Solid white in the middle */
+                                var(--main-color) 50%, /* Solid white in the middle */
                                 rgba(255, 255, 255, 0) 100%); /* Transparent at the bottom */
     width: 1px;
     margin: 0 4rem;
 }
 
 .contact-box a {
-    position: relative;
-    top: 10px;
     font-size: 100px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-box a:hover {
     color: var(--main-color);
-    width: 42px;
-    height: 42px;
+}
+
+.contact-popup {
+    width: inherit;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: black;
+}
+
+/* #email, #phone {
+    display: none;
+} */
+
+.contact-popup-text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 15px;
 }
 
 /* .contact p {
