@@ -315,7 +315,7 @@ span {
 }
 
 .timeline-items {
-    max-width: 1200px;
+    max-width: 80vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -379,6 +379,10 @@ span {
     transition: 0.3 ease-in-out;
 }
 
+.timeline-content span {
+    font-size: 80%;
+}
+
 .timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
@@ -387,7 +391,7 @@ span {
 .timeline-content h3 {
     font-size: 20px;
     color: white;
-    margin: 0 0 10px;
+    /* margin: 0 0 10px; */
     font-weight: 500;
 }
 
@@ -396,6 +400,29 @@ span {
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+}
+
+.timeline-content .timeline-description {
+    margin-top: 1em;
+    text-align: left;
+}
+
+.timeline-content #remark {
+    text-align: left;
+    font-size: small;
+}
+
+.timeline-content ul {
+    text-align: left;
+    line-height: 125%;
+    font-size: medium;
+    margin-top: 1em;
+}
+
+.timeline-content ul li {
+    list-style:disc;
+    margin-left: 2em;
+    font-weight: 100;
 }
 
 ::-webkit-scrollbar {
@@ -475,6 +502,17 @@ span {
     font-size: 40px;
 }
 
+@media(min-width:1400px) {
+    html{
+        font-size: 75%;
+    }
+    .projects-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 5rem;
+    }
+}
+
 @media(max-width:1285px) {
     html{
         font-size: 55%;
@@ -496,9 +534,9 @@ span {
     #tagline {
         margin: 0;
     }
-    .timeline-items::before {
+    /* .timeline-items::before {
         left: 7px;
-    }
+    } */
     .timeline-items:nth-child(odd) {
         padding-right: 0;
         text-align: left;
@@ -511,9 +549,9 @@ span {
     .timeline-items:nth-child(even) {
         padding-left: 37px;
     }
-    .timeline-dot {
+    /* .timeline-dot {
         left: 0;
-    }
+    } */
     .projects {
         padding-bottom: 7rem;
     }
@@ -523,9 +561,6 @@ span {
     .footer {
         padding: 2rem 3%;
     }
-}
-
-@media(max-width:989px) {
     #menu-icon {
         display: block;
     }
@@ -581,7 +616,14 @@ span {
     }
 }
 
+
 @media(max-width:740px) {
+    .timeline-items::before {
+        left: 0;
+    } 
+    .timeline-dot {
+        left: 0;
+    }
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding-right: 0;
