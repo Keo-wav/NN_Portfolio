@@ -120,7 +120,6 @@ section {
 
 span {
     color: var(--main-color);
-
 }
 
 .logo span {
@@ -493,6 +492,9 @@ span {
     }
     section{
         padding: 10rem 3% 2rem;
+    }
+    #tagline {
+        margin: 0;
     }
     .timeline-items::before {
         left: 7px;
