@@ -1,3 +1,5 @@
+// NAVBAR RESPONSIVITY
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar')
 let sections = document.querySelectorAll('.section')
@@ -23,3 +25,19 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 }
+
+// EMAIL CLIPBOARD COPY
+
+let copyEmail = document.getElementById("copy-email")
+
+console.log(copyEmail)
+
+document.getElementById('copy-email').addEventListener('click', function(event) {
+    event.preventDefault();
+    const email = "n.nackphouminh@gmail.com";
+    navigator.clipboard.writeText(email).then(function() {
+        alert('Email copied to clipboard: ' + email);
+    }, function(error) {
+        console.error('Could not copy text: ', error);
+    });
+});

@@ -685,17 +685,18 @@ span {
     color: white;
 }
 
-.contact p {
-    margin-bottom: 2em;
-}
-
 /* CONTACT SECTION V2 */
 
 .contact p {
     margin-top: 10rem;
+    margin-bottom: 2em;
     color: var(--main-color);
     font-size: 15px;
     text-align: center;
+}
+
+#copy-email {
+    cursor: pointer;
 }
 
 #contact-box-container {
