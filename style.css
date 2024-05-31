@@ -122,6 +122,11 @@ span {
     color: var(--main-color);
 }
 
+.em {
+    color: var(--main-color);
+    font-size: inherit;
+}
+
 .logo span {
     color: var(--main-color);
 }
