@@ -554,14 +554,8 @@ span {
     .timeline-items:nth-child(even) {
         padding-left: 37px;
     }
-    /* .timeline-dot {
-        left: 0;
-    } */
     .projects {
         padding-bottom: 7rem;
-    }
-    .contact form {
-        flex-direction: column;
     }
     .footer {
         padding: 2rem 3%;
@@ -691,6 +685,10 @@ span {
     color: white;
 }
 
+.contact p {
+    margin-bottom: 2em;
+}
+
 /* CONTACT SECTION V2 */
 
 .contact p {
@@ -742,66 +740,6 @@ span {
     background-color: var(--main-color);
     color: black;
 }
-
-/* #email, #phone {
-    display: none;
-} */
-
-.contact-popup-text {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 15px;
-}
-
-/* .contact p {
-    color: var(--main-color);
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.contact p a {
-    color: inherit;
-    transition: 0.3s ease-in-out;
-}
-
-.contact p a:hover {
-    color: var(--text-color);
-}
-
-.contact form {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: 1rem;
-    border: 2px solid var(--main-color);
-    margin: 1rem 0;
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-} */
 
 .footer {
     position: relative;
