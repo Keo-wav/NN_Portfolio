@@ -40,12 +40,3 @@ document.getElementById('copy-email').addEventListener('click', function(event) 
     });
 });
 
-
-// MEDIA PLAYER
-
-let mediaPlay = document.getElementById("play")
-
-mediaPlay.addEventListener('click', () => {
-    console.log('click')
-})
-
