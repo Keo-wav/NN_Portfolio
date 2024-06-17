@@ -30,8 +30,6 @@ menuIcon.onclick = () => {
 
 let copyEmail = document.getElementById("copy-email")
 
-console.log(copyEmail)
-
 document.getElementById('copy-email').addEventListener('click', function(event) {
     event.preventDefault();
     const email = "n.nackphouminh@gmail.com";
@@ -41,3 +39,13 @@ document.getElementById('copy-email').addEventListener('click', function(event) 
         console.error('Could not copy text: ', error);
     });
 });
+
+
+// MEDIA PLAYER
+
+let mediaPlay = document.getElementById("play")
+
+mediaPlay.addEventListener('click', () => {
+    console.log('click')
+})
+
